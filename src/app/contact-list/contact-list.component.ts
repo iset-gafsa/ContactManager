@@ -15,18 +15,27 @@ export class ContactListComponent implements OnInit {
   }
 
   listContacts: Array<Contact> = new Array<Contact>();
+  /**
+   * Create fake contact list
+   */
   createContact() {
-    let contact = new Contact("Ali", "Mohamed", "ali.mohamed@hotmail.com", "Freind", "Ami", "98559121");
+    let contact = new Contact("Ali", "Mohamed", "ali.mohamed@XXX.com", "Freind", "Un ami", "98XXXXXX");
     this.listContacts.push(contact);
 
-    let contact2 = new Contact("Salah", "Belgacem", "salahm@gmail.com", "Freind", "Ami", "21366306");
+    let contact2 = new Contact("Salah", "Belgacem", "salahm@XXX.com", "Freind", "Un ami", "21XXXXXX");
     this.listContacts.push(contact2);
 
-    let contact3 = new Contact("Meriem", "HAMMAMI", "meriem@topnet.com", "Family", "Ami", "21366306");
+    let contact3 = new Contact("Meriem", "AHMED", "meriem@XXX.com", "Family", "Ma fille", "21XXXXXX");
     this.listContacts.push(contact3);
 
-    let contact4 = new Contact("SARRA", "HAMMAMI", "sarra@topnet.com", "Work", "Ami travail", "21366306");
+    let contact4 = new Contact("Sarra", "AHMED", "meriem@XXX.com", "Family", "Ma fille", "55XXXXXX");
     this.listContacts.push(contact4);
+
+    let contact5 = new Contact("Raouf", "KHALED", "raouf@XXX.com", "Work", "Directeur de département", "21XXXXXX");
+    this.listContacts.push(contact5);
+
+    let contact6 = new Contact("Fadhel", "MANSOUR", "fadhel@XXX.com", "Work", "Directeur", "21XXXXXX");
+    this.listContacts.push(contact6);
 
     //create 5 contacts
     /*for (let i = 1; i <= 5; i++) {
