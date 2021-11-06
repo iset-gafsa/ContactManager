@@ -1,16 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { RootComponent } from './root/root.component';
+import { MenuComponent } from './menu/menu.component';
+import { ContactListComponent } from './contact-list/contact-list.component';
+import { ContactItemComponent } from './contact-item/contact-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    RootComponent,
+    MenuComponent,
+    ContactListComponent,
+    ContactItemComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [RootComponent]
 })
 export class AppModule { }

@@ -1,0 +1,24 @@
+<div class="card mb-4 rounded-3 shadow-sm">
+    <div class="card-header py-3" [ngSwitch]="contact.type">
+        <h4 class="my-0 fw-normal" *ngSwitchCase="'Freind'" [ngClass]="'freindContact'">Contact {{index+1}}</h4>
+        <h4 class="my-0 fw-normal" *ngSwitchCase="'Work'" [ngClass]="'workContact'">Contact {{index+1}}</h4>
+        <h4 class="my-0 fw-normal" *ngSwitchCase="'Family'" [ngClass]="'familyContact'">Contact {{index+1}}</h4>
+    </div>
+    <div class="card-body">
+        <!--h1 class="card-title" [ngClass]="isMarked ? 'myClass' : ''">Walid HAMMAMI</h1-->
+        <h1 class="card-title">{{contact.firstName}} {{contact.lastName}}</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+            <li>Phone : {{contact.phone}}</li>
+            <li>Email : {{contact.email}}</li>
+            <li>Description : {{contact.description}}</li>
+        </ul>
+        <div class="mat-card-actions">
+            <button type="button" class="btn btn-primary">
+                Editer
+            </button>
+            <button (click)='deleteContact()' type="button" class="btn btn-danger">
+                Supprimer
+            </button>
+        </div>
+    </div>
+</div>
