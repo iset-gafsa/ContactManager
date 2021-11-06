@@ -1,8 +1,10 @@
 <main>
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col" *ngFor="let item of listContacts; let i=index">
-            <app-contact-item [contact]='item' [index]="i"></app-contact-item>
+            <app-contact-item [contact]='item' [index]="i" (deleteEvent)="deleteContact($event)"></app-contact-item>
         </div>
     </div>
 </main>
 
+
+  
