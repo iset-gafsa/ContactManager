@@ -3,7 +3,7 @@ export class Contact{
     firstName:string;
     lastName:string;
     email:string;
-    type:"Freind"|"Work"|"Family";
+    type:"Friend"|"Work"|"Family";
     description:string;
     phone:string;
 
