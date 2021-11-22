@@ -1,0 +1,39 @@
+<main>
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <h3 class="text-center">Ajout d'un nouveau contact</h3>
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <label for="firstName" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Sarah" value="" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Nom :</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Hamami" value="" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="phone" class="form-label">Téléphone :</label>
+                    <input type="text" class="form-control" id="phone" placeholder="98000000" value="" required>
+                </div>
+                <div class="col-6">
+                    <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                </div>
+                <div class="col-6">
+                    <label for="description" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="description" placeholder="My daughter">
+                </div>
+                <div class="col-md-5">
+                    <label for="country" class="form-label">Type</label>
+                    <select class="form-select" id="country" required>
+                        <option value="Friend">Ami</option>
+                        <option value="Work">Travail</option>
+                        <option value="Family">Famille</option>
+                    </select>
+                </div>
+                <hr class="my-4">
+                <button class="w-30 btn btn-primary btn-lg" type="submit" style="max-width:'200px'">Ajouter</button>
+            </div>
+        </div>
+    </div>
+</main>
